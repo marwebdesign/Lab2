@@ -10,9 +10,11 @@
 </head>
 <form id="form">
   <label for="firstName">Enter your first name here:</label>
-  <input type="text" id="firstName"></input>
+  <input type="text" id="firstName" pattern="[a-öA-Ö]*" title="Only letters please!" required></input>
   <label for="lastName">Enter your first name here:</label>
-  <input type="text" id="lastName"></input>
+  <input type="text" id="lastName" pattern="[a-öA-Ö]*" title="Only letters please!" required></input>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" required></input>
   <button type="submit" id="submitButton>">Click to start quiz</button>
 </form>
 <p id="welcomeParagraph"></p>
@@ -22,6 +24,6 @@
 
 <body>
 </body>
-<script src="script.js"></script>
+<script src="mariawestling.js"></script>
 
 </html>
