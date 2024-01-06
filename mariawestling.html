@@ -8,21 +8,67 @@
   <link rel="stylesheet" href="styles.css" />
   <title>Document</title>
 </head>
-<form id="form">
-  <label for="firstName">Enter your first name here:</label>
-  <input type="text" id="firstName" pattern="[a-öA-Ö]*" title="Only letters please!" required></input>
-  <label for="lastName">Enter your first name here:</label>
-  <input type="text" id="lastName" pattern="[a-öA-Ö]*" title="Only letters please!" required></input>
-  <label for="email">Enter your email:</label>
-  <input type="email" id="email" required></input>
-  <button type="submit" id="submitButton>">Click to start quiz</button>
-</form>
-<p id="welcomeParagraph"></p>
-<div id="quizContentDiv">
-  QUIZ HERE
-</div>
 
 <body>
+  <form id="form">
+    <label for="firstName">Enter your first name here:</label>
+    <input type="text" id="firstName" pattern="[a-öA-Ö]*" title="Only letters please!" required></input>
+    <label for="lastName">Enter your first name here:</label>
+    <input type="text" id="lastName" pattern="[a-öA-Ö]*" title="Only letters please!" required></input>
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" required></input>
+    <button type="submit" id="submitButton>">Click to start quiz</button>
+  </form>
+  <p id="welcomeParagraph"></p>
+  <div id="quizContentDiv">
+    <form id="quizForm">
+      <div id="firstQuestion">
+        <p>the swedish flag is yellow and.. </p>
+        <input type="radio" id="blue" name="quizQuestion1" value="blue">
+        <label for="blue">blue</label>
+        <input type="radio" id="green" name="quizQuestion1" value="green">
+        <label for="blue">green</label>
+        <input type="radio" id="red" name="quizQuestion1" value="red">
+        <label for="blue">red</label>
+      </div>
+      <div id="secondQuestion">
+        <p>which countries have a border to sweden? select all right answers!</p>
+        <input type="checkbox" id="norway" name="quizQuestion2" value="norway">
+        <label for="vehicle1">norway</label>
+        <input type="checkbox" id="germany" name="quizQuestion2" value="germany">
+        <label for="vehicle2">germany</label>
+        <input type="checkbox" id="denmark" name="quizQuestion2" value="denmark">
+        <label for="vehicle3">denmark</label>
+        <input type="checkbox" id="poland" name="quizQuestion2" value="poland">
+        <label for="vehicle3">poland</label>
+      </div>
+      <div id="thirdQuestion">
+        <label for="openQ">Why did the chicken cross the road?</label>
+        <input type="text" id="openQ" name="quizQuestion3" value="across">
+      </div>
+      <div id="fourthQuestion">
+        <label for="cars">Choose the best programming language:</label>
+        <select id="programmingLanguages" name="quizQuestion4">
+          <option value="C#" id="C#">C#</option>
+          <option value="javaScript" id="javaScript">javaScript</option>
+          <option value="python" id="python">python</option>
+          <option value="java" id="java">java</option>
+        </select>
+      </div>
+      <div id="fifthQuestion">
+        <p>how many weeks are there usually in a year? </p>
+        <input type="radio" id="50" name="quizQuestion1" value="50">
+        <label for="blue">50</label>
+        <input type="radio" id="51" name="quizQuestion1" value="51">
+        <label for="blue">51</label>
+        <input type="radio" id="52" name="quizQuestion1" value="52">
+        <label for="blue">52</label>
+        <input type="radio" id="53" name="quizQuestion1" value="53">
+        <label for="blue">53</label>
+      </div>
+      <input type="submit" value="submit">
+    </form>
+  </div>
 </body>
 <script src="mariawestling.js"></script>
 
