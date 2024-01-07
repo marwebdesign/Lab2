@@ -24,7 +24,7 @@ body {
 }
 
 #quizContentDiv {
-  display: none;
+  /* display: none; */
   width: 50%;
   font-size: 20px;
   background-color: #94B49F;

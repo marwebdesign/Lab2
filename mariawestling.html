@@ -11,7 +11,7 @@
 
 <body>
   <div id="contentContainer">
-    <div id="userInformationDiv">
+    <!-- <div id="userInformationDiv">
       <form id="userForm">
         <label for="firstName">Enter your first name: <span class="required">*</span></label></br>
         <input type="text" id="firstName" pattern="[a-öA-Ö]*" title="Only letters please!" required></input></br>
@@ -22,63 +22,76 @@
         <button type="submit" id="submitButton>">Click to start quiz</button>
       </form>
       <p><span class="required">*</span> Required information</p>
-    </div>
+    </div> -->
     <p id="welcomeParagraph"></p>
     <div id="quizContentDiv">
+
       <form id="quizForm">
-        <div id="firstQuestion">
-          <p>the swedish flag is yellow and.. <span class="required">*</span></p>
-          <input type="radio" id="blue" name="quizQuestion1" value="blue" required>
-          <label for="blue">blue</label>
-          <input type="radio" id="green" name="quizQuestion1" value="green">
-          <label for="blue">green</label>
-          <input type="radio" id="red" name="quizQuestion1" value="red">
-          <label for="blue">red</label>
+        <form id="quizForm">
+          <div id="firstQuestion">
+            <p>Which character was a runaway bride in the very first episode? </p>
+            <input type="radio" id="monica" name="q1" value="monica">
+            <label for="monica">Monica</label>
+            <input type="radio" id="phoebe" name="q1" value="phoebe">
+            <label for="phoebe">Phoebe</label>
+            <input type="radio" id="rachel" name="q1" value="rachel">
+            <label for="rachel">Rachel</label>
+            <input type="radio" id="chandler" name="q1" value="chandler">
+            <label for="chandler">Chandler</label>
+            <p id="firstQAnswer"></p>
+          </div>
+
+
+          <div id="secondQuestion">
+            <label for="q2">Choose the best programming language:</label>
+            <select id="q2" name="quizQuestion4">
+              <option value="">Select from list</option>
+              <option value="C#">C#</option>
+              <option value="javaScript">javaScript</option>
+              <option value="python">python</option>
+              <option value="java">java</option>
+            </select>
+            <p id="secondQAnswer"></p>
+          </div>
+
+          <div id="thirdQuestion">
+            <p>What is the name of the very blond guy working in the coffee shop "Central Perk"?<span
+                class="required">*</span></p>
+            <input type="radio" name="q3" id="gunther" value="gunther" required>
+            <label for="blue">blue</label>
+            <input type="radio" name="q3" id="walter" value="walter">
+            <label for="blue">green</label>
+            <input type="radio" name="q3 " id="fred" value="fred">
+            <label for="blue">red</label>
+          </div>
+
+          <div id="secondQuestion">
+            <p>which countries have a border to sweden? select all right answers! </p>
+            <input type="checkbox" id="norway" name="quizQuestion2" value="norway">
+            <label for="vehicle1">norway</label>
+            <input type="checkbox" id="germany" name="quizQuestion2" value="germany">
+            <label for="vehicle2">germany</label>
+            <input type="checkbox" id="denmark" name="quizQuestion2" value="denmark">
+            <label for="vehicle3">denmark</label>
+            <input type="checkbox" id="poland" name="quizQuestion2" value="poland">
+            <label for="vehicle3">poland</label>
+          </div>
+
+          <div id="fifthQuestion">
+            <label for="q1">What is the name of the very blond guy working in the coffee shop "Central Perk"?<span
+                class="required">*</span></label>
+            <input type="text" id="q1" name="q1" required>
+          </div>
+          <p>click to reveal all the right answers!</p>
+          <button id="quizSubmitButton" type="submit" value="submit">SUBMIT</button>
+        </form>
+
+        <div id="resultsDiv">
+          <p id="howMany"></p>
+          <p id="correctAnswers"></p>
         </div>
-        <div id="secondQuestion">
-          <p>which countries have a border to sweden? select all right answers! </p>
-          <input type="checkbox" id="norway" name="quizQuestion2" value="norway">
-          <label for="vehicle1">norway</label>
-          <input type="checkbox" id="germany" name="quizQuestion2" value="germany">
-          <label for="vehicle2">germany</label>
-          <input type="checkbox" id="denmark" name="quizQuestion2" value="denmark">
-          <label for="vehicle3">denmark</label>
-          <input type="checkbox" id="poland" name="quizQuestion2" value="poland">
-          <label for="vehicle3">poland</label>
-        </div>
-        <div id="thirdQuestion">
-          <label for="openQ">Why did the chicken cross the road? <span class="required">*</span></label>
-          <input type="text" id="openQ" name="quizQuestion3" required>
-        </div>
-        <div id="fourthQuestion">
-          <label for="cars">Choose the best programming language:</label>
-          <select id="programmingLanguages" name="quizQuestion4">
-            <option value="C#" id="C#">C#</option>
-            <option value="javaScript" id="javaScript">javaScript</option>
-            <option value="python" id="python">python</option>
-            <option value="java" id="java">java</option>
-          </select>
-        </div>
-        <div id="fifthQuestion">
-          <p>how many weeks are there usually in a year? </p>
-          <input type="radio" id="50" name="quizQuestion1" value="50">
-          <label for="blue">50</label>
-          <input type="radio" id="51" name="quizQuestion1" value="51">
-          <label for="blue">51</label>
-          <input type="radio" id="52" name="quizQuestion1" value="52">
-          <label for="blue">52</label>
-          <input type="radio" id="53" name="quizQuestion1" value="53">
-          <label for="blue">53</label>
-        </div>
-        <button id="quizSubmitButton" type="submit" value="submit">Submit</button>
-      </form>
 
     </div>
-    <div id="resultsDiv">
-      results here
-    </div>
-
-  </div>
 </body>
 <script src="mariawestling.js"></script>
 
