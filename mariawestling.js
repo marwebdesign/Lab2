@@ -6,6 +6,7 @@ const quizContentDiv = document.getElementById("quizContentDiv")
 let openQvalue = document.getElementById("openQ").value
 const quizForm = document.getElementById("quizForm")
 const resultsDiv = document.getElementById("resultsDiv")
+const userinformationDiv = document.getElementById("userInformationDiv")
 
 userForm.addEventListener("submit", function (event) {
   event.preventDefault()
@@ -13,7 +14,7 @@ userForm.addEventListener("submit", function (event) {
   const lastNameInput = lastName.value
   welcomeParagraph.textContent = `Welcome ${firstNameInput} ${lastNameInput}. Let's start the quiz!`
   quizContentDiv.style.display = "block"
-  //resultsDiv.style.display = "block"
+  userinformationDiv.style.display = "none"
 })
 
 quizForm.addEventListener("submit", function (event) {
