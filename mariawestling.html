@@ -14,17 +14,19 @@
     <div id="userInformationDiv">
       <H1>Please enter your information to start this quiz about the TV show FRIENDS!</H1>
       <form id="userForm">
-        <label for="firstName">Enter your first name: <span class="required">*</span></label></br>
+        <!-- <label for="firstName">Enter your first name: <span class="req">*</span></label></br>
         <input type="text" id="firstName" pattern="[a-öA-Ö]*" title="Only letters please!"></input></br>
-        <label for="lastName">Enter your first name: <span class="required">*</span></label></br>
-        <input type="text" id="lastName" pattern="[a-öA-Ö]*" title="Only letters please!"></input></br>
-        <label for="email">Enter your email: <span class="required">*</span></label></br>
-        <input type="email" id="email"></input></br>
+        <label for="lastName">Enter your first name: <span class="req">*</span></label></br>
+        <input type="text" id="lastName" pattern="[a-öA-Ö]*" title="Only letters please!"></input></br> -->
+        <label for="email">Enter your email: <span class="req">*</span></label></br>
+        <input type="text" id="email"></input></br>
         <button type="submit" id="submitButton>">Click to start quiz</button>
       </form>
       <p><span class="required">*</span> Required information</p>
+      <p id="missingFields">hello</p>
+      <p id="welcomeParagraph"></p>
     </div>
-    <p id="welcomeParagraph"></p>
+
     <div id="quizContentDiv">
 
       <form id="quizForm">
@@ -40,8 +42,6 @@
           <label for="rachel">Rachel</label>
           <input type="radio" id="chandler" name="q1" value="chandler">
           <label for="chandler">Chandler</label>
-          <!-- <button type="button" id="q1Button">FIND OUT!</button> -->
-          <!-- <p id="firstQAnswer"></p> -->
         </div>
 
 
@@ -55,8 +55,6 @@
             <option value="seven">7</option>
             <option value="eight">8</option>
           </select>
-          <!-- <button type="button" id="q2Button">FIND OUT!</button> -->
-          <!-- <p id="secondQAnswer"></p> -->
         </div>
 
         <div id="thirdQuestion" class="qDivs">
@@ -69,8 +67,6 @@
           <label for="walter">Walter</label>
           <input type="radio" name="q3 " id="fred" value="fred">
           <label for="fred">Fred</label>
-          <!-- <button type="button" id="q3Button">FIND OUT!</button> -->
-          <!-- <p id="thirdQAnswer"></p> -->
         </div>
 
         <div id="fourthQuestion" class="qDivs">
@@ -88,8 +84,6 @@
           <label for="ross">Ross</label>
           <input type="checkbox" id="monica" name="quizQuestion2" value="monica">
           <label for="monica">Monica</label>
-          <!-- <button type="button" id="q4Button">FIND OUT!</button> -->
-          <!-- <p id="fourthQAnswer"></p> -->
         </div>
 
         <div id="fifthQuestion" class="qDivs">

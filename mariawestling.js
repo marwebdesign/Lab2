@@ -3,6 +3,8 @@ const userinformationDiv = document.getElementById("userInformationDiv")
 const userForm = document.getElementById("userForm")
 const firstName = document.getElementById("firstName")
 const lastName = document.getElementById("lastName")
+const email = document.getElementById("email")
+const missingFields = document.getElementById("missingFields")
 const welcomeParagraph = document.getElementById("welcomeParagraph")
 //QUIZ FORM
 const quizContentDiv = document.getElementById("quizContentDiv")
@@ -14,11 +16,19 @@ const restartButton = document.getElementById("restartButton")
 
 userForm.addEventListener("submit", function (event) {
   event.preventDefault()
-  const firstNameInput = firstName.value
-  const lastNameInput = lastName.value
-  welcomeParagraph.textContent = `Welcome ${firstNameInput} ${lastNameInput}. Let's start the quiz!`
-  quizContentDiv.style.display = "block"
-  userinformationDiv.style.display = "none"
+  welcomeParagraph.textContent = ''
+  // const firstNameInput = firstName.value
+  // const lastNameInput = lastName.value
+  if (email.value.includes("@")) {
+    welcomeParagraph.textContent = `Welcome ${firstNameInput} ${lastNameInput}. Let's start the quiz!`
+    quizContentDiv.style.display = "block"
+    userinformationDiv.style.display = "none"
+  } else {
+    welcomeParagraph.textContent = "enter a valid email adress!"
+  }
+
+
+
 })
 
 quizForm.addEventListener("submit", function (event) {
