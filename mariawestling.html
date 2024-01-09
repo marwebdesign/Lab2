@@ -11,86 +11,101 @@
 
 <body>
   <div id="contentContainer">
-    <!-- <div id="userInformationDiv">
+    <div id="userInformationDiv">
+      <H1>Please enter your information to start this quiz about the TV show FRIENDS!</H1>
       <form id="userForm">
         <label for="firstName">Enter your first name: <span class="required">*</span></label></br>
-        <input type="text" id="firstName" pattern="[a-öA-Ö]*" title="Only letters please!" required></input></br>
+        <input type="text" id="firstName" pattern="[a-öA-Ö]*" title="Only letters please!"></input></br>
         <label for="lastName">Enter your first name: <span class="required">*</span></label></br>
-        <input type="text" id="lastName" pattern="[a-öA-Ö]*" title="Only letters please!" required></input></br>
+        <input type="text" id="lastName" pattern="[a-öA-Ö]*" title="Only letters please!"></input></br>
         <label for="email">Enter your email: <span class="required">*</span></label></br>
-        <input type="email" id="email" required></input></br>
+        <input type="email" id="email"></input></br>
         <button type="submit" id="submitButton>">Click to start quiz</button>
       </form>
       <p><span class="required">*</span> Required information</p>
-    </div> -->
+    </div>
     <p id="welcomeParagraph"></p>
     <div id="quizContentDiv">
 
       <form id="quizForm">
-        <form id="quizForm">
-          <div id="firstQuestion">
-            <p>Which character was a runaway bride in the very first episode? </p>
-            <input type="radio" id="monica" name="q1" value="monica">
-            <label for="monica">Monica</label>
-            <input type="radio" id="phoebe" name="q1" value="phoebe">
-            <label for="phoebe">Phoebe</label>
-            <input type="radio" id="rachel" name="q1" value="rachel">
-            <label for="rachel">Rachel</label>
-            <input type="radio" id="chandler" name="q1" value="chandler">
-            <label for="chandler">Chandler</label>
-            <p id="firstQAnswer"></p>
-          </div>
 
-
-          <div id="secondQuestion">
-            <label for="q2">Choose the best programming language:</label>
-            <select id="q2" name="quizQuestion4">
-              <option value="">Select from list</option>
-              <option value="C#">C#</option>
-              <option value="javaScript">javaScript</option>
-              <option value="python">python</option>
-              <option value="java">java</option>
-            </select>
-            <p id="secondQAnswer"></p>
-          </div>
-
-          <div id="thirdQuestion">
-            <p>What is the name of the very blond guy working in the coffee shop "Central Perk"?<span
-                class="required">*</span></p>
-            <input type="radio" name="q3" id="gunther" value="gunther" required>
-            <label for="blue">blue</label>
-            <input type="radio" name="q3" id="walter" value="walter">
-            <label for="blue">green</label>
-            <input type="radio" name="q3 " id="fred" value="fred">
-            <label for="blue">red</label>
-          </div>
-
-          <div id="secondQuestion">
-            <p>which countries have a border to sweden? select all right answers! </p>
-            <input type="checkbox" id="norway" name="quizQuestion2" value="norway">
-            <label for="vehicle1">norway</label>
-            <input type="checkbox" id="germany" name="quizQuestion2" value="germany">
-            <label for="vehicle2">germany</label>
-            <input type="checkbox" id="denmark" name="quizQuestion2" value="denmark">
-            <label for="vehicle3">denmark</label>
-            <input type="checkbox" id="poland" name="quizQuestion2" value="poland">
-            <label for="vehicle3">poland</label>
-          </div>
-
-          <div id="fifthQuestion">
-            <label for="q1">What is the name of the very blond guy working in the coffee shop "Central Perk"?<span
-                class="required">*</span></label>
-            <input type="text" id="q1" name="q1" required>
-          </div>
-          <p>click to reveal all the right answers!</p>
-          <button id="quizSubmitButton" type="submit" value="submit">SUBMIT</button>
-        </form>
-
-        <div id="resultsDiv">
-          <p id="howMany"></p>
-          <p id="correctAnswers"></p>
+        <div id="firstQuestion" class="qDivs">
+          <h3>QUESTION ONE</h3>
+          <p>Which character was a runaway bride in the very first episode? </p>
+          <input type="radio" id="monica" name="q1" value="monica">
+          <label for="monica">Monica</label>
+          <input type="radio" id="phoebe" name="q1" value="phoebe">
+          <label for="phoebe">Phoebe</label>
+          <input type="radio" id="rachel" name="q1" value="rachel">
+          <label for="rachel">Rachel</label>
+          <input type="radio" id="chandler" name="q1" value="chandler">
+          <label for="chandler">Chandler</label>
+          <!-- <button type="button" id="q1Button">FIND OUT!</button> -->
+          <!-- <p id="firstQAnswer"></p> -->
         </div>
 
+
+        <div id="secondQuestion" class="qDivs">
+          <h3>QUESTION TWO</h3>
+          <label for="q2">How many sisters does Joey have?</label>
+          <select id="q2" name="q2">
+            <option value="">Select from list</option>
+            <option value="five">5</option>
+            <option value="six">6</option>
+            <option value="seven">7</option>
+            <option value="eight">8</option>
+          </select>
+          <!-- <button type="button" id="q2Button">FIND OUT!</button> -->
+          <!-- <p id="secondQAnswer"></p> -->
+        </div>
+
+        <div id="thirdQuestion" class="qDivs">
+          <h3>QUESTION THREE</h3>
+          <p>What is the name of the very blond guy working in the coffee shop "Central Perk"?<span
+              class="required">*</span></p>
+          <input type="radio" name="q3" id="gunther" value="gunther" required>
+          <label for="gunther">Gunther</label>
+          <input type="radio" name="q3" id="walter" value="walter">
+          <label for="walter">Walter</label>
+          <input type="radio" name="q3 " id="fred" value="fred">
+          <label for="fred">Fred</label>
+          <!-- <button type="button" id="q3Button">FIND OUT!</button> -->
+          <!-- <p id="thirdQAnswer"></p> -->
+        </div>
+
+        <div id="fourthQuestion" class="qDivs">
+          <h3>QUESTION FOUR</h3>
+          <p>which out of the other characters did Rachel have a romance with? Select all
+            the right answers!
+          </p>
+          <input type="checkbox" id="joey" name="quizQuestion2" value="joey">
+          <label for="joey">Joey</label>
+          <input type="checkbox" id="chandler" name="quizQuestion2" value="chandler">
+          <label for="chandler">Chandler</label>
+          <input type="checkbox" id="phoebe" name="quizQuestion2" value="phoebe">
+          <label for="phoebe">Phoebe</label>
+          <input type="checkbox" id="ross" name="quizQuestion2" value="ross">
+          <label for="ross">Ross</label>
+          <input type="checkbox" id="monica" name="quizQuestion2" value="monica">
+          <label for="monica">Monica</label>
+          <!-- <button type="button" id="q4Button">FIND OUT!</button> -->
+          <!-- <p id="fourthQAnswer"></p> -->
+        </div>
+
+        <div id="fifthQuestion" class="qDivs">
+          <h3>QUESTION FIVE</h3>
+          <label for="q5">What is the name of the Coffee shop where the Friends usually hang out? <span
+              class="required">*</span></label>
+          <input type="text" id="q5" name="q5" required>
+        </div>
+        <p>click to reveal all the right answers!</p>
+        <button id="quizSubmitButton" type="submit" value="submit">SUBMIT</button>
+      </form>
+
+    </div>
+    <div id="resultsDiv">
+      <p id="correctAnswers"></p>
+      <button id="restartButton" type="button">RESTART GAME!</button>
     </div>
 </body>
 <script src="mariawestling.js"></script>

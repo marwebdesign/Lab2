@@ -1,11 +1,10 @@
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #FCF8E8;
 }
 
 #contentContainer {
-  background-color: #FCF8E8;
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,16 +23,13 @@ body {
 }
 
 #quizContentDiv {
-  /* display: none; */
+  display: none;
   width: 50%;
   font-size: 20px;
   background-color: #94B49F;
   border-radius: 20px;
   box-shadow: 5px 5px 5px #ECB390;
   padding: 30px;
-  /* display: flex;
-  flex-direction: row;
-  align-items: center; */
 }
 
 #quizSubmitButton {
@@ -49,4 +45,13 @@ body {
 
 #resultsDiv {
   display: none;
+}
+
+.qDivs {
+  padding: 5px;
+}
+
+h1 {
+  align-items: center;
+
 }
